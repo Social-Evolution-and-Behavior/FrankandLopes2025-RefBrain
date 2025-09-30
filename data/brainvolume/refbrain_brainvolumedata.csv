@@ -1,0 +1,184 @@
+Raw Name,Clean Name,alt name,Flip Vertical,Rotation Applied,Z reverse,Flipped in Preprocessing,Notes,Egocentric Leaning,Skip Affine,Refinement Inclusion,Correction Angle,MB Tilt Angle,Δ from 90,Mirrored?,Mirror Value,Experiment,Condition,AMIRA volume,neuropil segmenter / notes,L MB,R MB,L AL,R AL,L OL,R OL,CBupper,CBlower,PB,L NO,R NO,CB,CX,body length,head area
+DFB01_Airyscan Processing_Stitch.czi,synA647_DF_B01.nrrd,DFB01,0,0,0,0,na,left,0,1,1.68,126.37,36.37,1,-36.37,refbrain,included,4940765,LL,519400,521599,273043,278091,8279,9731,21641,7556,5361,697,671,29197,35926,,
+DFB03_A_Airyscan Processing_Stitch.czi,synA647_DF_B03_A.nrrd,,0,4.8,0,0,na,right,0,1,4.26,119.12,29.12,0,29.12,refbrain,included,6061877,used LL but was done by all 3,722126,656694,339778,285753,10704,8177,29136,7176,10835,914,1195,36312,49256,,
+DFB03_B_Airyscan Processing_Stitch.czi,synA647_DF_B03_B.nrrd,,0,0,0,0,na,left,0,1,-1.4,116.71,26.71,1,-26.71,refbrain,included,4355634,,,,,,,,,,,,,,,,
+DFB03_D_Airyscan Processing_Stitch.czi,synA647_DF_B03_D.nrrd,,0,0,0,0,sym in past,right,0,1,-1.9,101.31,11.31,0,11.31,refbrain,included,4416600,,,,,,,,,,,,,,,,
+DFB04_B_Airyscan Processing_Stitch.czi,synA647_DF_B04_B.nrrd,,0,0,0,0,na,right,0,1,-3.37,120.61,30.61,0,30.61,refbrain,included,4437437,,,,,,,,,,,,,,,,
+DFB05_C_Airyscan Processing_Stitch.czi,synA647_DF_B05_C.nrrd,,0,0,0,0,na,right,0,1,3.48,118.78,28.78,0,28.78,refbrain,included,5616344,,,,,,,,,,,,,,,,
+DFB14_Airyscan Processing_Stitch.czi,synA647_DF_B14.nrrd,,0,2.9,0,0,na + sym in past,left,0,1,-2.91,106.78,16.78,1,-16.78,refbrain,included,3599527,,,,,,,,,,,,,,,,
+DFB16_Airyscan Processing_Stitch.czi,synA647_DF_B16.nrrd,,0,0,0,0,na,left,0,1,-0.83,121.02,31.02,1,-31.02,refbrain,included,3982071,,426202,428051,,,,,,,,,,,,,
+DFC01_AiryscanProcessing_Stitch.czi,synA647_DF_C01.nrrd,,0,-2.9,0,0,na,left,0,1,-0.08,102.53,12.53,1,-12.53,refbrain,included,3627123,,,,,,,,,,,,,,,,
+DFC04_Airyscan processing_Stitch.czi,synA647_DF_C04-fixed.nrrd,,0,2.9,0,0,fixed (piece of VNC removed),left,0,1,0.14,123.05,33.05,1,-33.05,refbrain,included,3689770,,,,,,,,,,,,,,,,
+DFC05_Airyscan Processing_Stitch.czi,synA647_DF_C05.nrrd,,0,0,0,0,low intensity,right,0,1,-1.13,116.87,26.87,0,26.87,refbrain,included,4334935,,502515,508397,260308,266733,6273,6593,22303,6482,5824,793,659,28785,36061,,
+DFC07_Airyscan Processing_Stitch.czi,synA647_DF_C07.nrrd,,0,0,0,0,na + sym in past,left,0,1,1.3,96.53,6.53,1,-6.53,refbrain,included,3784537,,,,,,,,,,,,,,,,
+DFC08_Airyscan Processing_Stitch.czi,synA647_DF_C08.nrrd,,0,0,0,0,na,left,0,1,-0.78,111.49,21.49,1,-21.49,refbrain,included,3900255,,,,,,,,,,,,,,,,
+220216_ant_40x_A647syn_brain10.tif,synA647_LL_10_220216.nrrd,,0,2.9,0,1,distorted cx,left,0,1,-0.09,113.84,23.84,1,-23.84,refbrain,included,7184972,"segmented after flip, do not need to change labels",,,,,,,,,,,,,,,
+LL_201212_1-3_brain3_synorf.tiff,synA647_LL_1-33.nrrd,,0,0,0,1,distorted cx + sym in past,right,0,1,1.02,120.44,30.44,0,30.44,refbrain,included,4347272,,,,,,,,,,,,,,,,
+220217_A647syn_brain14.tif,synA647_LL_14_220217.nrrd,,0,-83.2,0,1,low intensity,left,0,1,-1.81,114.54,24.54,1,-24.54,refbrain,included,4493780,,,,,,,,,,,,,,,,
+LL_201212_1-4_brain1_synorf.tiff,synA647_LL_1-41.nrrd,,0,0,0,1,slightly left + sym in past,right,0,1,-0.7,108.2,18.2,0,18.2,refbrain,included,4525212,,,,,,,,,,,,,,,,
+220217_ant_40x_A647syn_brain15.tif,synA647_LL_15_220217.nrrd,,0,90,1,1,distorted cxt + sym in past,right,0,1,3.9,99.79,9.79,0,9.79,refbrain,included,5661965,,,,,,,,,,,,,,,,
+LL_201120_B1-1_synorf.tif,synA647_LL_201120_B11.nrrd,,0,0,0,1,anterior cut,left,0,1,-4.35,121.2,31.2,1,-31.2,refbrain,included,5102726,,,,,,,,,,,,,,,,
+LL_201120_B2-1_synorf.tif,synA647_LL_201120_B21.nrrd,,0,4.8,0,1,anterior cut,left,0,1,1.17,125.28,35.28,1,-35.28,refbrain,included,4919411,,,,,,,,,,,,,,,,
+LL_201120_C2-1_synorf.tif,synA647_LL_201120_C21.nrrd,,0,0,0,1,anterior cut,right,0,1,0.58,116.57,26.57,0,26.57,refbrain,included,5153776,,,,,,,,,,,,,,,,
+LL_201123_C2-2_synorf.tif,synA647_LL_201123_C22.nrrd,,0,0,0,1,anterior cut,right,0,1,1.55,122.04,32.04,0,32.04,refbrain,included,5525003,,,,,,,,,,,,,,,,
+LL_201212_1-3_brain1_synorf.tif,synA647_LL_201212_131.nrrd,,0,0,0,1,heavy distortion,right,0,1,-4.44,116.36,26.36,0,26.36,refbrain,included,6414960,,,,,,,,,,,,,,,,
+LL_201213_2-1_brain1_synorf.tif,synA647_LL_201213_211.nrrd,,0,0,0,1,na,right,0,1,0.11,136.81,46.81,0,46.81,refbrain,included,3714238,"segmentation done on brain before flipping, swapped labels",382282,427349,224568,217824,5333,5855,18609,5607,5824,412,607,24216,31059,,
+LL_201213_2-3_brain1_synorf.tif,synA647_LL_201213_231.nrrd,,0,0,0,1,na,right,0,1,0.74,116.07,26.07,0,26.07,refbrain,included,5983720.5,,,,,,,,,,,,,,,,
+LL_201213_2-4_brain2_synorf.tif,synA647_LL_201213_242.nrrd,,0,0,0,1,na,right,0,1,1.08,115.86,25.86,0,25.86,refbrain,included,6334607,,,,,,,,,,,,,,,,
+LL_201213_2-5_brain3_synorf.tif,synA647_LL_201213_253.nrrd,,0,0,0,1,na,right,0,1,-2.09,116.72,26.72,0,26.72,refbrain,included,4118911,,,,,,,,,,,,,,,,
+LL_201213_2-6_brain3_synorf.tif,synA647_LL_201213_263.nrrd,,0,0,0,1,na,left,0,1,-2.27,117.65,27.65,1,-27.65,refbrain,included,3496739,"segmentation done on brain before flipping, swapped labels; CX hard to segment especially NO",416900,374578,208391,196401,5481,6119,12624,6472,4927,245,291,19096,24559,,
+LL_201213_2-4_brain1_synorf.tiff,synA647_LL_2-41.nrrd,,0,-8.7,0,1,na,left,0,1,-1.18,122.7,32.7,1,-32.7,refbrain,included,4233538,,,,,,,,,,,,,,,,
+LL_201213_2-5_brain1_synorf.tiff,synA647_LL_2-51.nrrd,,0,-4.8,0,1,na,right,0,1,-1.43,125.75,35.75,0,35.75,refbrain,included,5656796,,,,,,,,,,,,,,,,
+220214_synA647_brain4.tiff,synA647_LL_4_220214.nrrd,,0,0,1,1,low intensity,left,0,1,-0.85,113.45,23.45,1,-23.45,refbrain,included,8658281,,773094,981236,565977,543177,19130,17381,36535,13135,12893,923,1115,26028,64601,,
+220216_ant_40x_A647syn_brain6.tif,synA647_LL_6_220216.nrrd,,0,-64.8,1,1,low intensity,left,0,1,0.66,113.48,23.48,1,-23.48,refbrain,included,4198189,,,,,,,,,,,,,,,,
+LL_200916_B19_Airyscan Processing_Stitch.czi,synA647_LL_B19_200916.nrrd,,0,28.1,0,1,na,left,0,1,2.14,116.16,26.16,1,-26.16,refbrain,included,4808606,,,,,,,,,,,,,,,,
+LL_200917_B22_Airyscan Processing_Stitch.czi,synA647_LL_B22_200917.nrrd,,0,-90,0,1,na,right,0,1,0.75,113.84,23.84,0,23.84,refbrain,included,4466042,,,,,,,,,,,,,,,,
+LL_200917_B26_Airyscan Processing_Stitch.czi,synA647_LL_B26_200917.nrrd,,0,49.4,0,1,na,right,0,1,0.98,122.86,32.86,0,32.86,refbrain,included,3954047,LL,431815,446382,184765,188137,6639,7099,20080,5860,8297,759,838,25940,35834,,
+LL_200917_B34_Airyscan Processing_Stitch.czi,synA647_LL_B34_200917.nrrd,,0,-51.3,0,1,na,right,0,1,-4.08,125.7,35.7,0,35.7,refbrain,included,5544480,,,,,,,,,,,,,,,,
+200727_L12_synA647_Airyscan Processing_Stitch.czi,synA647_LL_L12_200727.nrrd,,1,61,0,1,na,left,0,1,-0.25,112.86,22.86,1,-22.86,refbrain,included,6967403,,,,,,,,,,,,,,,,
+200724_L3_synA647_Airyscan Processing_Stitch.czi,synA647_LL_L3_200724.nrrd,,0,-81.3,0,1,na,right,0,1,-2.71,119.74,29.74,0,29.74,refbrain,included,5540693,,,,,,,,,,,,,,,,
+200724_L4_synA647_Airyscan Processing_Stitch.czi,synA647_LL_L4_200724.nrrd,LL_A4,1,70.6,0,1,na + sym in past,right,0,1,-1.31,91.68,1.68,0,1.68,refbrain,included,6403398,"segmentation done on brain before flipping, swapped labels",733417,808843,361134,430129,9255,12504,40419,12392,11868,1424,1353,52811,67456,,
+200724_L8_synA647_Airyscan Processing_Stitch.czi,synA647_LL_L8_200724.nrrd,,0,-70.6,0,1,na + sym in past,left,0,1,-1.88,97.13,7.13,1,-7.13,refbrain,included,7214997,,826182,767056,,,,,,,,,,,,,
+DFA07_Airyscan Processing_Stitch.czi,synA647_DF_A07.nrrd,,0,8.7,0,0,EXCLUDED,left,0,1,,,,,,refbrain,excluded,3628962,LL,509898,474211,185914,177804,,,20688,7100,6798,,,,,,
+DFA10_Airyscan Processing_Stitch.czi,synA647_DF_A10.nrrd,,0,-4.3,0,0,EXCLUDED,right,0,1,,,,,,refbrain,excluded,4443472,LL,549734,547010,216325,216533,,,20382,7848,6522,,,,,,
+DFB02_A_Airyscan Processing_Stitch.czi,synA647_DF_B02.nrrd,,0,10.6,0,0,EXCLUDED,right,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+DFB12_Airyscan Processing_Stitch.czi,synA647_DF_B12.nrrd,,0,1,0,0,EXCLUDED,right,1,0,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+DFB15_Airyscan Processing_Stitch.czi,synA647_DF_B15.nrrd,,0,0,0,0,EXCLUDED,left,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+220214_synA647_brain1.tif,synA647_LL_1_220214.nrrd,,0,-55.2,0,-,EXCLUDED + distorted cx,sym,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+LL_201123_C2-3_synorf.tif,synA647_LL_201123_C23.nrrd,,0,0,0,1,EXCLUDED + anterior cut,right,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+LL_201213_2-3_brain2_synorf.tiff,synA647_LL_2-32.nrrd,,0,-2.9,0,-,EXCLUDED,left,0,1,,,,,,refbrain,excluded,5023428,LL,595262,576134,311046,272373,,,35947,11751,11066,,,,,,
+220214_synA647_phallA555_brain3_Airyscan Processing_Stitch.czi - C=1.tif,synA647_LL_3_220214.nrrd,,0,0,1,-,EXCLUDED,sym,1,0,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+LL_200915_B10_Airyscan Processing_Stitch.czi,synA647_LL_B10_200915.nrrd,,1,-62.8,0,1,EXCLUDED + heavy distortion,left,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+LL_200917_B21_Airyscan Processing_Stitch.czi,synA647_LL_B21.nrrd,,1,20.3,0,-,EXCLUDED + low intensity,right,0,1,,,,,,refbrain,excluded,4034345,LL,311046,272373,344481,237590,,,19416,7244,6744,,,,,,
+200727_L11_synA647_Airyscan Processing_Stitch.czi,synA647_LL_L11_200727.nrrd,,0,85.2,0,-,EXCLUDED + weird pixels size,right,0,1,,,,,,refbrain,excluded,,,,,,,,,,,,,,,,,
+ref_brain,,,,,,,,,,,,,,,,refbrain,averaged,4277958,LL_DF,532239,533664,279566,266636,7405,7074,25169,8041,9887,632,796,,43097,,
+Line A w1b1,,,,,,,,,,,,,,,,lineA,,7103744,,,,,,,,,,,,,,,,
+Line A w1b2,,,,,,,,,,,,,,,,lineA,,,,,,,,,,,,,,,,,,
+Line A w1b3,,,,,,,,,,,,,,,,lineA,,7980064,,,,,,,,,,,,,,,,
+Line A w1b4,,,,,,,,,,,,,,,,lineA,,5309489,,,,,,,,,,,,,,,,
+Line A w1b5,,,,,,,,,,,,,,,,lineA,,4713527,,,,,,,,,,,,,,,,
+Line A w1b6,,,,,,,,,,,,,,,,lineA,,4338071,,,,,,,,,,,,,,,,
+Line A w1b7,,,,,,,,,,,,,,,,lineA,,,,,,,,,,,,,,,,,,
+Line A w1b8,,,,,,,,,,,,,,,,lineA,,7232883,,,,,,,,,,,,,,,,
+Line A w1b9,,,,,,,,,,,,,,,,lineA,,7655925,,,,,,,,,,,,,,,,
+Line A w1b10,,,,,,,,,,,,,,,,lineA,,8465706,,,,,,,,,,,,,,,,
+Line A w1b11,,,,,,,,,,,,,,,,lineA,,4691876,,,,,,,,,,,,,,,,
+Line A w2b1,,,,,,,,,,,,,,,,lineA,,6469774,,,,,,,,,,,,,,,,
+Line A w2b2,,,,,,,,,,,,,,,,lineA,,5642298,,,,,,,,,,,,,,,,
+Line A w2b3,,,,,,,,,,,,,,,,lineA,,5709032,,,,,,,,,,,,,,,,
+Line A w2b4,,,,,,,,,,,,,,,,lineA,,,,,,,,,,,,,,,,,,
+Line A w2b5,,,,,,,,,,,,,,,,lineA,,4230337,,,,,,,,,,,,,,,,
+Line A w2b6,,,,,,,,,,,,,,,,lineA,,5421661,,,,,,,,,,,,,,,,
+Line A w2b7,,,,,,,,,,,,,,,,lineA,,4698403,,,,,,,,,,,,,,,,
+Line A w2b8,,,,,,,,,,,,,,,,lineA,,4918582,,,,,,,,,,,,,,,,
+Line A w2b9,,,,,,,,,,,,,,,,lineA,,4569362,,,,,,,,,,,,,,,,
+Line A w2b10,,,,,,,,,,,,,,,,lineA,,4832247,,,,,,,,,,,,,,,,
+Line A w2b11,,,,,,,,,,,,,,,,lineA,,4421941,,,,,,,,,,,,,,,,
+Line A w2b12,,,,,,,,,,,,,,,,lineA,,4305528,,,,,,,,,,,,,,,,
+Line A w2b13,,,,,,,,,,,,,,,,lineA,,5031243,,,,,,,,,,,,,,,,
+Line A w2b14,,,,,,,,,,,,,,,,lineA,,5075112,,,,,,,,,,,,,,,,
+Line A w2b15,,,,,,,,,,,,,,,,lineA,,,,,,,,,,,,,,,,,,
+Line A w2b16,,,,,,,,,,,,,,,,lineA,,4628517,,,,,,,,,,,,,,,,
+Rd1_i01b01,,,,,,,,,,,,,,,,intercastevworker,intercaste,7697952,,,,,,,,,,,,,,,,
+Rd1_i01b02,,,,,,,,,,,,,,,,intercastevworker,intercaste,5411333,,,,,,,,,,,,,,,,
+Rd1_i01b03,,,,,,,,,,,,,,,,intercastevworker,intercaste,5201251,,,,,,,,,,,,,,,,
+Rd1_i01b05,,,,,,,,,,,,,,,,intercastevworker,intercaste,5045396,,,,,,,,,,,,,,,,
+Rd1_i01b06,,,,,,,,,,,,,,,,intercastevworker,intercaste,6937302,,,,,,,,,,,,,,,,
+Rd1_i01b07,,,,,,,,,,,,,,,,intercastevworker,intercaste,4221620,,,,,,,,,,,,,,,,
+Rd1_i01b08,,,,,,,,,,,,,,,,intercastevworker,intercaste,5435464,,,,,,,,,,,,,,,,
+Rd1_i01b09,,,,,,,,,,,,,,,,intercastevworker,intercaste,3862755,,,,,,,,,,,,,,,,
+Rd1_i01b11,,,,,,,,,,,,,,,,intercastevworker,intercaste,4153434,,,,,,,,,,,,,,,,
+Rd1_i02b12,,,,,,,,,,,,,,,,intercastevworker,intercaste,5938496,,,,,,,,,,,,,,,,
+Rd1_i02b13,,,,,,,,,,,,,,,,intercastevworker,intercaste,4098283,,,,,,,,,,,,,,,,
+Rd1_i02b16,,,,,,,,,,,,,,,,intercastevworker,intercaste,5372641,,,,,,,,,,,,,,,,
+Rd1_i02b17,,,,,,,,,,,,,,,,intercastevworker,intercaste,4738975,,,,,,,,,,,,,,,,
+Rd1_i02b18,,,,,,,,,,,,,,,,intercastevworker,intercaste,,,,,,,,,,,,,,,,,
+Rd1_i02b21,,,,,,,,,,,,,,,,intercastevworker,intercaste,9316222,,,,,,,,,,,,,,,,
+Rd1_i02b24,,,,,,,,,,,,,,,,intercastevworker,intercaste,5637570,,,,,,,,,,,,,,,,
+Rd1_i02b25,,,,,,,,,,,,,,,,intercastevworker,intercaste,5204995,,,,,,,,,,,,,,,,
+Rd1_w01b01,,,,,,,,,,,,,,,,intercastevworker,worker,4142691,,,,,,,,,,,,,,,,
+Rd1_w01b04,,,,,,,,,,,,,,,,intercastevworker,worker,5815784,,,,,,,,,,,,,,,,
+Rd1_w01b07,,,,,,,,,,,,,,,,intercastevworker,worker,5469726,,,,,,,,,,,,,,,,
+Rd1_w01b09,,,,,,,,,,,,,,,,intercastevworker,worker,3664208,,,,,,,,,,,,,,,,
+Rd1_w01b13,,,,,,,,,,,,,,,,intercastevworker,worker,4139029,,,,,,,,,,,,,,,,
+Rd1_w02b16,,,,,,,,,,,,,,,,intercastevworker,worker,7450651,,,,,,,,,,,,,,,,
+Rd1_w02b18,,,,,,,,,,,,,,,,intercastevworker,worker,5275895,,,,,,,,,,,,,,,,
+Rd1_w02b19,,,,,,,,,,,,,,,,intercastevworker,worker,5444034,,,,,,,,,,,,,,,,
+Rd1_w02b20,,,,,,,,,,,,,,,,intercastevworker,worker,4149626,,,,,,,,,,,,,,,,
+Rd1_w02b21,,,,,,,,,,,,,,,,intercastevworker,worker,4165275,,,,,,,,,,,,,,,,
+Rd1_w02b22,,,,,,,,,,,,,,,,intercastevworker,worker,4108174,,,,,,,,,,,,,,,,
+Rd1_w02b24,,,,,,,,,,,,,,,,intercastevworker,worker,4227276,,,,,,,,,,,,,,,,
+Rd1_w02b25,,,,,,,,,,,,,,,,intercastevworker,worker,5487344,,,,,,,,,,,,,,,,
+Rd2_i01b01,,,,,,,,,,,,,,,,intercastevworker,intercaste,4491599,,,,,,,,,,,,,,,,
+Rd2_i01b04,,,,,,,,,,,,,,,,intercastevworker,intercaste,6577996,,,,,,,,,,,,,,,,
+Rd2_i01b05,,,,,,,,,,,,,,,,intercastevworker,intercaste,5788722,,,,,,,,,,,,,,,,
+Rd2_i02b06,,,,,,,,,,,,,,,,intercastevworker,intercaste,4858280,,,,,,,,,,,,,,,,
+Rd2_i02b07,,,,,,,,,,,,,,,,intercastevworker,intercaste,6901402,,,,,,,,,,,,,,,,
+Rd2_i02b09,,,,,,,,,,,,,,,,intercastevworker,intercaste,7154851,,,,,,,,,,,,,,,,
+Rd2_i02b13,,,,,,,,,,,,,,,,intercastevworker,intercaste,4619864,,,,,,,,,,,,,,,,
+Rd2_i02b14,,,,,,,,,,,,,,,,intercastevworker,intercaste,5687133,,,,,,,,,,,,,,,,
+Rd2_i02b16,,,,,,,,,,,,,,,,intercastevworker,intercaste,4232548,,,,,,,,,,,,,,,,
+Rd2_i02b21,,,,,,,,,,,,,,,,intercastevworker,intercaste,8525597,,,,,,,,,,,,,,,,
+Rd2_i02b22,,,,,,,,,,,,,,,,intercastevworker,intercaste,8711247,,,,,,,,,,,,,,,,
+Rd2_w01b01,,,,,,,,,,,,,,,,intercastevworker,worker,4370753,,,,,,,,,,,,,,,,
+Rd2_w01b02,,,,,,,,,,,,,,,,intercastevworker,worker,6005652,,,,,,,,,,,,,,,,
+Rd2_w01b03,,,,,,,,,,,,,,,,intercastevworker,worker,5889267,,,,,,,,,,,,,,,,
+Rd2_w01b04,,,,,,,,,,,,,,,,intercastevworker,worker,4977012,,,,,,,,,,,,,,,,
+Rd2_w01b07,,,,,,,,,,,,,,,,intercastevworker,worker,5330617,,,,,,,,,,,,,,,,
+Rd2_w01b09,,,,,,,,,,,,,,,,intercastevworker,worker,6090796,,,,,,,,,,,,,,,,
+Rd2_w01b11,,,,,,,,,,,,,,,,intercastevworker,worker,4835887,,,,,,,,,,,,,,,,
+Rd2_w01b12,,,,,,,,,,,,,,,,intercastevworker,worker,4977242,,,,,,,,,,,,,,,,
+Rd2_w01b13,,,,,,,,,,,,,,,,intercastevworker,worker,4900962,,,,,,,,,,,,,,,,
+Rd2_w02b16,,,,,,,,,,,,,,,,intercastevworker,worker,6787203,,,,,,,,,,,,,,,,
+Rd2_w02b17,,,,,,,,,,,,,,,,intercastevworker,worker,5162582,,,,,,,,,,,,,,,,
+Rd2_w02b18,,,,,,,,,,,,,,,,intercastevworker,worker,5099325,,,,,,,,,,,,,,,,
+brain1.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,4806259,,,,,,,,,,,,,,,1.563,0.199548
+brain3.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,4574038,,,,,,,,,,,,,,,1.629,0.215136
+brain5.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,5667759,,,,,,,,,,,,,,,1.657,0.21242
+brain8.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,4747845,,,,,,,,,,,,,,,1.633,0.211432
+brain12.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,9716442,,,,,,,,,,,,,,,1.55,0.192708
+brain13.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,4662442,,,,,,,,,,,,,,,1.606,0.203343
+brain14.20x.647.10.27.23,,,,,,,,,,,,,,,,brainvbody,,7478954,,,,,,,,,,,,,,,1.583,0.198909
+brain1.20x.647.11.08.23,,,,,,,,,,,,,,,,brainvbody,,10769692,,,,,,,,,,,,,,,1.612,0.207974
+brain10.20x.647.11.08.23,,,,,,,,,,,,,,,,brainvbody,,8649860,,,,,,,,,,,,,,,1.591,0.203765
+brain12.20x.647.11.08.23,,,,,,,,,,,,,,,,brainvbody,,11930004,,,,,,,,,,,,,,,1.616,0.21168
+brain16.20x.647.11.08.23,,,,,,,,,,,,,,,,brainvbody,,9828895,,,,,,,,,,,,,,,1.575,0.191836
+brain20.20x.647.11.08.23,,,,,,,,,,,,,,,,brainvbody,,8380620,,,,,,,,,,,,,,,1.605,0.200819
+brain_24_20x_647.czi,,,,,,,,,,,,,,,,brainvbody,,3825259,,,,,,,,,,,,,,,1.63,0.208395
+brain_26_20x_647.czi,,,,,,,,,,,,,,,,brainvbody,,7073005,,,,,,,,,,,,,,,1.606,0.205729
+brain_33_20x_647.czi,,,,,,,,,,,,,,,,brainvbody,,5498368,,,,,,,,,,,,,,,1.635,0.210168
+Brain1.20x.647.11.15.23,,,,,,,,,,,,,,,,brainvbody,,3225101,,,,,,,,,,,,,,,1.481,0.178992
+brain14.20x.647.11.15.23,,,,,,,,,,,,,,,,brainvbody,,4033452,,,,,,,,,,,,,,,1.515,0.188972
+Brain16_20x_647_11_15_23,,,,,,,,,,,,,,,,brainvbody,,3848304,,,,,,,,,,,,,,,1.564,0.19355
+Brain18_20x_647_11_15_23,,,,,,,,,,,,,,,,brainvbody,,3786754,,,,,,,,,,,,,,,1.629,0.208164
+brain20.20x.647.11.16.23,,,,,,,,,,,,,,,,brainvbody,,4696852,,,,,,,,,,,,,,,1.6,0.204848
+brain22.20x.647.11.16.23,,,,,,,,,,,,,,,,brainvbody,,4754165,,,,,,,,,,,,,,,1.519,0.182988
+brain23.20x.647.11.16.23,,,,,,,,,,,,,,,,brainvbody,,4922412,,,,,,,,,,,,,,,1.51,0.187544
+brain33.20x.647.11.16.23,,,,,,,,,,,,,,,,brainvbody,,4068308,,,,,,,,,,,,,,,1.608,0.197873
+231210.Brain2.20x.647,,,,,,,,,,,,,,,,brainvbody,,5570185,,,,,,,,,,,,,,,1.678,0.212014
+231210.Brain3.20x.647,,,,,,,,,,,,,,,,brainvbody,,7228617,,,,,,,,,,,,,,,1.646,0.20907
+231210.Brain4.20x.647,,,,,,,,,,,,,,,,brainvbody,,6300236,,,,,,,,,,,,,,,1.637,0.201544
+231210.Brain8.20x.647,,,,,,,,,,,,,,,,brainvbody,,4127776,,,,,,,,,,,,,,,1.624,0.202776
+231210.Brain10.20x.647,,,,,,,,,,,,,,,,brainvbody,,3988291,,,,,,,,,,,,,,,1.639,0.19796
+231208.Brain13.20x.647,,,,,,,,,,,,,,,,brainvbody,,6961876,,,,,,,,,,,,,,,1.54,0.185255
+231208.Brain16.20x.647,,,,,,,,,,,,,,,,brainvbody,,10921722,,,,,,,,,,,,,,,1.604,0.190998
+231208.Brain17.20x.647,,,,,,,,,,,,,,,,brainvbody,,7026415,,,,,,,,,,,,,,,1.547,0.19602
+231208.Brain18.20x.647,,,,,,,,,,,,,,,,brainvbody,,4553677,,,,,,,,,,,,,,,1.661,0.207648
+231208.Brain23.20x.647,,,,,,,,,,,,,,,,brainvbody,,5501424,,,,,,,,,,,,,,,1.628,0.19845
+231208.Brain24.20x.647,,,,,,,,,,,,,,,,brainvbody,,4321245,,,,,,,,,,,,,,,1.559,0.18912
+231210.Brain25.20x.647,,,,,,,,,,,,,,,,brainvbody,,8144515,,,,,,,,,,,,,,,1.596,0.194927
+231210.Brain26.20x.647,,,,,,,,,,,,,,,,brainvbody,,9232001,,,,,,,,,,,,,,,1.611,0.19649
+231212.Brain29.20x.647,,,,,,,,,,,,,,,,brainvbody,,6250155,,,,,,,,,,,,,,,1.6,0.202292
+231212.Brain31.20x.647,,,,,,,,,,,,,,,,brainvbody,,3689521,,,,,,,,,,,,,,,1.608,0.201552
+231212.Brain32.20x.647,,,,,,,,,,,,,,,,brainvbody,,3381439,,,,,,,,,,,,,,,1.591,0.194636
+231212.Brain33.20x.647,,,,,,,,,,,,,,,,brainvbody,,3670392,,,,,,,,,,,,,,,1.592,0.185107
+231212.Brain34.20x.647,,,,,,,,,,,,,,,,brainvbody,,6292265,,,,,,,,,,,,,,,1.596,0.199104
+231212.Brain35.20x.647,,,,,,,,,,,,,,,,brainvbody,,5335801,,,,,,,,,,,,,,,1.547,0.1919
+231212.Brain36.20x.647,,,,,,,,,,,,,,,,brainvbody,,3754299,,,,,,,,,,,,,,,1.476,0.168176
+231212.Brain37.20x.647,,,,,,,,,,,,,,,,brainvbody,,5375764,,,,,,,,,,,,,,,1.557,0.18798
+231212.Brain38.20x.647,,,,,,,,,,,,,,,,brainvbody,,4375290,,,,,,,,,,,,,,,1.637,0.202692
+231212.Brain40.20x.647,,,,,,,,,,,,,,,,brainvbody,,6515704,,,,,,,,,,,,,,,1.59,0.18837
+231210.Brain42.20x.647,,,,,,,,,,,,,,,,brainvbody,,6961876,,,,,,,,,,,,,,,1.591,0.185666
+231210.Brain45.20x.647,,,,,,,,,,,,,,,,brainvbody,,5268681,,,,,,,,,,,,,,,1.579,0.19392
+231210.Brain51.20x.647,,,,,,,,,,,,,,,,brainvbody,,4974415,,,,,,,,,,,,,,,1.599,0.194616
+231210.Brain52.20x.647,,,,,,,,,,,,,,,,brainvbody,,7465289,,,,,,,,,,,,,,,1.555,0.185464
