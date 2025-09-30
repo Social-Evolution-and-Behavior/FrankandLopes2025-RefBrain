@@ -62,12 +62,13 @@ jobs:
           # Use xvfb to provide a headless X server for VTK/PyVista
           xvfb-run -s "-screen 0 1920x1080x24" jupyter nbconvert --to notebook --execute FrankandLopes_refbrain_code_fig2_suppfig2.ipynb --ExecutePreprocessor.timeout=600 --output executed_Fig2.ipynb
 
-      - name: Execute Fig3 notebook (headless)
+      - name: Execute Fig3 headless script
         env:
           MPLBACKEND: Agg
           PYVISTA_OFF_SCREEN: '1'
         run: |
-          xvfb-run -s "-screen 0 1920x1080x24" jupyter nbconvert --to notebook --execute FrankandLopes_refbrain_code_fig3.ipynb --ExecutePreprocessor.timeout=900 --output executed_Fig3.ipynb
+          # Prefer running the stable headless script (avoids notebook execution order issues)
+          xvfb-run -s "-screen 0 1920x1080x24" /usr/bin/env python3 scripts/run_fig3_headless.py
 
       - name: Upload generated figures
         uses: actions/upload-artifact@v4
@@ -75,10 +76,9 @@ jobs:
           name: figures
           path: figures
 
-      - name: Upload executed notebooks
+      - name: (optional) Upload executed Fig2 notebook
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: executed-notebooks
-          path: |
-            executed_Fig2.ipynb
-            executed_Fig3.ipynb
+          name: executed-fig2-notebook
+          path: executed_Fig2.ipynb
