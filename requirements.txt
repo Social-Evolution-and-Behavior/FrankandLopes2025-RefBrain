@@ -1,0 +1,35 @@
+# Requirements for FrankandLopes2025-RefBrain
+# Generated from quick scan of the notebooks in the repository.
+# Recommended Python runtime: 3.10 or 3.11
+# Install with: pip install -r requirements.txt
+
+# Core scientific stack
+numpy>=1.23,<2
+pandas>=1.5,<2
+scipy>=1.9,<2
+matplotlib>=3.5,<4
+seaborn>=0.12,<1
+
+# Image processing / IO
+scikit-image>=0.19,<1
+tifffile>=2022.10
+
+# Notebook / interactive
+notebook>=6.5
+ipython>=8.0
+
+# Utilities (optional but commonly useful)
+tqdm>=4.64
+imagecodecs>=2022.10
+
+# Optional extras (uncomment / install if you need them)
+## napari for interactive image inspection
+## napari>=0.6
+## dask/zarr for out-of-core processing of large images
+## dask>=2022.5
+## zarr>=2.16
+
+# Notes:
+# - Version bounds are conservative to maximize compatibility with common conda/pip setups.
+# - If you use conda, consider creating an environment with Python 3.10 and then pip-installing these packages
+#   or use conda-forge to install binary packages (e.g., conda install -c conda-forge numpy pandas scipy scikit-image tifffile matplotlib seaborn)
