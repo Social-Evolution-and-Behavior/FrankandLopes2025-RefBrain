@@ -145,11 +145,11 @@ def main():
         print('No brainvolume CSV found or file empty — exiting')
         return
 
-    # split experiments
-    refbrain_df = df[df['Experiment']=='refbrain']
-    lineA_df = df[df['Experiment']=='lineA']
-    intercastevworker_df = df[df['Experiment']=='intercastevworker']
-    brainvbody_df = df[df['Experiment']=='brainvbody']
+    # split experiments (make explicit copies to avoid SettingWithCopyWarning)
+    refbrain_df = df.loc[df['Experiment'] == 'refbrain'].copy()
+    lineA_df = df.loc[df['Experiment'] == 'lineA'].copy()
+    intercastevworker_df = df.loc[df['Experiment'] == 'intercastevworker'].copy()
+    brainvbody_df = df.loc[df['Experiment'] == 'brainvbody'].copy()
 
     # Fig2A
     filtered = refbrain_df[refbrain_df['Condition']=='included']
@@ -166,10 +166,11 @@ def main():
     plot_regression(refbrain_df, 'Avg AL' if 'Avg AL' in refbrain_df.columns else 'R AL', 'AMIRA volume', 'figures/Fig2C_brainvolumevsALvolume.png', 'figures/Fig2C_brainvolumevsALvolume.eps', xlim=(1.6e5,6.0e5), xticks=np.arange(2e5,7e5,1e5), ylim=(0,1.3e7), xlabel='Average AL Volume (μm³)', ylabel='Total Brain Volume (μm³)')
     # For MB, OL, CX the notebook computes avg MB/OL etc — recompute defensively
     if 'R MB' in refbrain_df.columns and 'L MB' in refbrain_df.columns:
-        refbrain_df['avg MB'] = (refbrain_df.get('R MB', np.nan) + refbrain_df.get('L MB', np.nan)) / 2
+        # assign using .loc to avoid SettingWithCopyWarning
+        refbrain_df.loc[:, 'avg MB'] = (refbrain_df.get('R MB', np.nan) + refbrain_df.get('L MB', np.nan)) / 2
         plot_regression(refbrain_df, 'avg MB', 'AMIRA volume', 'figures/Fig2D_brainvolumevsMBvolume.png', 'figures/Fig2D_brainvolumevsMBvolume.eps', xlim=(3.5e5,9.5e5), xticks=np.arange(4e5,9.1e5,1e5), ylim=(0,1.3e7), xlabel='Average MB Volume (μm³)', ylabel='Total Brain Volume (μm³)')
     if 'R OL' in refbrain_df.columns and 'L OL' in refbrain_df.columns:
-        refbrain_df['avg OL'] = (refbrain_df.get('R OL', np.nan) + refbrain_df.get('L OL', np.nan)) / 2
+        refbrain_df.loc[:, 'avg OL'] = (refbrain_df.get('R OL', np.nan) + refbrain_df.get('L OL', np.nan)) / 2
         plot_regression(refbrain_df, 'avg OL', 'AMIRA volume', 'figures/Fig2E_brainvolumevsOLvolume.png', 'figures/Fig2E_brainvolumevsOLvolume.eps', xlim=(4e3,19e3), xticks=np.arange(5e3,19e3,3e3), ylim=(0,1.3e7), xlabel='Average OL Volume (μm³)', ylabel='Total Brain Volume (μm³)')
     if 'CX' in refbrain_df.columns:
         plot_regression(refbrain_df, 'CX', 'AMIRA volume', 'figures/Fig2F_brainvolumevsCXvolume.png', 'figures/Fig2F_brainvolumevsCXvolume.eps', xlim=(2e4,7.1e4), xticks=np.arange(2e4,7e4,1e4), ylim=(0,1.3e7), xlabel='CX Volume (μm³)', ylabel='Total Brain Volume (μm³)')

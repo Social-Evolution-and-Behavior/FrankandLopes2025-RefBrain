@@ -43,3 +43,7 @@ conda activate frankandlopes-refbrain-lock
 ```
 
 Note: The conda lockfile pins major binary packages (e.g., VTK/pyvista) and places pure-python packages under the pip section. If you prefer a different Python version or need to tighten package versions, edit the lockfile accordingly.
+
+## Continuous integration (CI)
+
+The repository CI runs headless figure-generation scripts on push/PR to `main`. The workflow sets environment variables to force non-interactive rendering (e.g. `MPLBACKEND=Agg`, `PYVISTA_OFF_SCREEN=1`) and uses `xvfb` for an X server to support VTK/pyvista off-screen rendering. If you add or modify headless scripts, update `.github/workflows/run_notebooks.yml` accordingly.

@@ -70,6 +70,14 @@ jobs:
           # Prefer running the stable headless script (avoids notebook execution order issues)
           xvfb-run -s "-screen 0 1920x1080x24" /usr/bin/env python3 scripts/run_fig3_headless.py
 
+      - name: Execute Fig2 & SF2 headless script
+        env:
+          MPLBACKEND: Agg
+          PYVISTA_OFF_SCREEN: '1'
+        run: |
+          # Run the Fig2 / SuppFig2 headless runner to produce the PNG/EPS artifacts
+          xvfb-run -s "-screen 0 1920x1080x24" /usr/bin/env python3 scripts/run_fig2_sf2_headless.py
+
       - name: Upload generated figures
         uses: actions/upload-artifact@v4
         with:
