@@ -4,13 +4,50 @@ Saves two figures to figures/: histogram and polar histogram.
 import os
 import sys
 os.environ.setdefault('MPLBACKEND', 'Agg')
+# Ensure pyvista/VTK run off-screen when this script is executed
+os.environ.setdefault('PYVISTA_OFF_SCREEN', '1')
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import skew, kurtosis
+import subprocess
 DATA_CSV = 'data/MB_Tilt_Data_102725.csv'
 OUT_DIR = 'figures'
 os.makedirs(OUT_DIR, exist_ok=True)
+
+# Prefer executing the canonical notebook if available. This keeps the
+# single-source-of-truth for plotting in the notebook while allowing CI to
+# run the same notebook via this headless script.
+NOTEBOOK = 'FrankandLopes_refbrain_code_fig1.ipynb'
+executed_nb = os.path.splitext(NOTEBOOK)[0] + '_executed.ipynb'
+def try_execute_notebook():
+    """Attempt to execute the canonical notebook via nbconvert. Returns True on success."""
+    if not os.path.exists(NOTEBOOK):
+        print(f'Notebook not found: {NOTEBOOK} — falling back to inline CSV logic')
+        return False
+    # Build the nbconvert command using the current Python executable
+    cmd = [sys.executable, '-m', 'nbconvert', '--to', 'notebook', '--execute', NOTEBOOK,
+           '--ExecutePreprocessor.timeout=600', '--output', executed_nb]
+    print('Running nbconvert to execute notebook:', ' '.join(cmd))
+    try:
+        completed = subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=os.environ)
+        print('nbconvert stdout:\n', completed.stdout.decode('utf-8'))
+        print('nbconvert stderr:\n', completed.stderr.decode('utf-8'))
+        print('Notebook executed successfully — check figures in', OUT_DIR)
+        return True
+    except subprocess.CalledProcessError as e:
+        print('nbconvert failed with return code', e.returncode)
+        try:
+            print('stdout:\n', e.stdout.decode('utf-8'))
+            print('stderr:\n', e.stderr.decode('utf-8'))
+        except Exception:
+            pass
+        print('Falling back to inline CSV plotting logic')
+        return False
+
+# Try to run the notebook first; if it fails, run the inline CSV-based plotting.
+if try_execute_notebook():
+    sys.exit(0)
 
 # Only accept CSV now
 if os.path.exists(DATA_CSV):
