@@ -13,6 +13,9 @@ seaborn>=0.12,<1
 # Image processing / IO
 scikit-image>=0.19,<1
 tifffile>=2022.10
+imagecodecs>=2022.10
+pyvista>=0.46,<1
+vtk>=9.0,<10
 
 # Notebook / interactive
 notebook>=6.5
