@@ -43,4 +43,9 @@ conda activate frankandlopes-refbrain-lock
 ```
 
 Note: The conda lockfile pins major binary packages (e.g., VTK/pyvista) and places pure-python packages under the pip section. If you prefer a different Python version or need to tighten package versions, edit the lockfile accordingly.
+
+## Quick notes
+
+- Prefer conda-forge for binary packages (VTK/pyvista): these are provided as pre-built binaries on conda-forge and avoid long/fragile pip builds. Example: `conda install -c conda-forge pyvista vtk`.
+- This branch (`no-headless-notebooks`) is interactive-first — headless runner scripts were removed and the three notebooks are the canonical entry points. Run the notebooks in Jupyter to reproduce figures.
  
