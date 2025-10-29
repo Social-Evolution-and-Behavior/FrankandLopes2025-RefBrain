@@ -44,6 +44,46 @@ conda activate frankandlopes-refbrain-lock
 
 Note: The conda lockfile pins major binary packages (e.g., VTK/pyvista) and places pure-python packages under the pip section. If you prefer a different Python version or need to tighten package versions, edit the lockfile accordingly.
 
-## Continuous integration (CI)
+## Quick smoke-test
 
-The repository CI runs headless figure-generation scripts on push/PR to `main`. The workflow sets environment variables to force non-interactive rendering (e.g. `MPLBACKEND=Agg`, `PYVISTA_OFF_SCREEN=1`) and uses `xvfb` for an X server to support VTK/pyvista off-screen rendering. If you add or modify headless scripts, update `.github/workflows/run_notebooks.yml` accordingly.
+After creating the environment (see above), run a minimal import check to ensure key packages used by the notebooks are available. These commands are intentionally small and safe — they only import libraries and print versions.
+
+Conda (recommended):
+
+```bash
+conda create -n refbrain-env python=3.10 -c conda-forge \
+	numpy pandas scipy matplotlib seaborn scikit-image tifffile imagecodecs pyvista vtk notebook ipython -y
+conda activate refbrain-env
+pip install -r requirements.txt  # optional to get any pip-only extras
+```
+
+Pip / venv:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Quick import check (runs a tiny Python snippet that prints package versions):
+
+```bash
+python - <<'PY'
+import sys
+import numpy as np
+import pandas as pd
+import scipy
+import matplotlib
+import seaborn
+import skimage
+import tifffile
+import imagecodecs
+import pyvista
+import vtk
+print('ok', 'python', sys.version.split()[0], 'numpy', np.__version__, 'pandas', pd.__version__, 'pyvista', pyvista.__version__)
+print('VTK version:', vtk.vtkVersion.GetVTKVersion())
+PY
+```
+
+If the import check runs without errors and prints versions, you have the minimal environment required to run the notebooks interactively. If pyvista/vtk import fails on a headless machine, prefer creating the conda environment on a machine with proper VTK support or install VTK from conda-forge (the command above does this).
